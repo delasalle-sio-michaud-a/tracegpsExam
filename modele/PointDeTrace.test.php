@@ -2,7 +2,7 @@
 // Projet TraceGPS
 // fichier : modele/PointDeTrace.test.php
 // Rôle : test de la classe PointDeTrace.class.php
-// Dernière mise à jour : 18/7/2021 par dPlanchet
+// Dernière mise à jour : 18/12/2017 par dP
 
 // inclusion de la classe PointDeTrace
 include_once ('PointDeTrace.class.php');
@@ -10,16 +10,12 @@ include_once ('PointDeTrace.class.php');
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Test de la classe PointDeTrace</title>
-<style type="text/css">
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: small;
-}
-</style>
+	<meta charset="utf-8">
+	<title>Test de la classe PointDeTrace</title>
+	<style type="text/css">body {font-family: Arial, Helvetica, sans-serif; font-size: small;}</style>
 </head>
-<body>
+<body> 
+
 
 <?php
 echo "<h3>Test de la classe PointDeTrace</h3>";
@@ -28,9 +24,9 @@ echo "<h3>Test de la classe PointDeTrace</h3>";
 $unIdTrace = 1;
 $unID = 1;
 $uneLatitude = 48.5;
-$uneLongitude = - 1.6;
+$uneLongitude = -1.6;
 $uneAltitude = 50;
-$uneDateHeure = date('Y-m-d H:i:s', time()); // l'heure courante
+$uneDateHeure = date('Y-m-d H:i:s', time());		// l'heure courante
 $unRythmeCardio = 80;
 $unTempsCumule = 00;
 $uneDistanceCumulee = 0;
@@ -56,9 +52,9 @@ $unPoint2 = new PointDeTrace(0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 $unPoint2->setIdTrace(1);
 $unPoint2->setId(2);
 $unPoint2->setLatitude(48.51);
-$unPoint2->setLongitude(- 1.6);
+$unPoint2->setLongitude(-1.6);
 $unPoint2->setAltitude(200);
-$unPoint2->setDateHeure(date('Y-m-d H:i:s', time() + 220)); // l'heure courante + 220 sec
+$unPoint2->setDateHeure(date('Y-m-d H:i:s', time() + 220));		// l'heure courante + 220 sec
 $unPoint2->setRythmeCardio(100);
 $unPoint2->setTempsCumule(220);
 $unPoint2->setDistanceCumulee(1.111);
@@ -82,6 +78,7 @@ echo ('<br>');
 echo "<h4>méthode toString sur objet unPoint2 : </h4>";
 echo ($unPoint2->toString());
 echo ('<br>');
+
 
 ?>
 
